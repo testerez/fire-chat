@@ -1,0 +1,21 @@
+{
+  "name": "test-firebase",
+  "version": "1.0.0",
+  "description": "A dead simple terminal chat app using Firebase",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "rm -rf dist && tsc -p . --outDir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/colors": "^0.6.33",
+    "@types/node": "^6.0.45",
+    "colors": "^1.1.2",
+    "firebase": "^3.5.2",
+    "node-ts": "^2.1.2",
+    "typescript": "^2.0.3"
+  }
+}
