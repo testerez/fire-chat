@@ -34,7 +34,7 @@ function prompt(message: string) {
   const userName = (await prompt('Your name (anonymous): ')).trim() || 'anonymous';
 
   // Write new messages to console
-  chatsRef.limitToLast(100).on('child_added', function (snapshot) {
+  chatsRef.limitToLast(100).on('child_added', snapshot => {
     const message = snapshot!.val();
     log(`${colors.yellow(message.user)}: ${message.text}`);
   });
