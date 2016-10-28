@@ -21,9 +21,12 @@ function log(message: string) {
   rl.prompt(true);
 }
 
+// Read input line from user and delete it from console
 function prompt(message: string) {
   return new Promise<string>(resolve => {
     rl.question(message, userInput => {
+      readline.moveCursor(process.stdout, 0, -1);
+      readline.clearLine(process.stdout, 0);
       resolve(userInput);
     });
   });
