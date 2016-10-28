@@ -15,7 +15,7 @@
     "@types/node": "^6.0.45",
     "colors": "^1.1.2",
     "firebase": "^3.5.2",
-    "node-ts": "^2.1.2",
+    "ts-node": "^1.6.1",
     "typescript": "^2.0.3"
   }
 }
